@@ -1,0 +1,40 @@
+<project>
+    <?xml version="1.0" encoding="UTF-8"?>
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>ThoughtWorks</groupId>
+    <artifactId>RoverApp</artifactId>
+    <packaging>jar</packaging>
+    <version>1.0.0.0-SNAPSHOT</version>
+    <name>RoverApp</name>
+
+
+    <developers>
+    <developer>
+        <id>1</id>
+        <name>Gary Cassar</name>
+        <email>garreth.cassar@gmail.com</email>
+        <organization>Thoughtworks</organization>
+        <organizationUrl>http://www.Thoughtworks.com</organizationUrl>
+    </developer>
+    </developers>
+
+    <dependencies>
+
+    </dependencies>
+
+    <build>
+    <plugins>
+
+
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-ejb-plugin</artifactId>
+            <version>2.1</version>
+            <configuration>
+                <ejbVersion>3.0</ejbVersion>
+            </configuration>
+        </plugin>
+    </plugins>
+    </build>
+
+</project>
