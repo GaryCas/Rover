@@ -1,9 +1,13 @@
 package com.company;
 
 
+import com.company.exceptions.CollisionException;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
+import services.ValidationService;
+
+import java.util.ArrayList;
 
 import static junit.framework.TestCase.*;
 
@@ -16,6 +20,7 @@ public class RoverTest {
     public void setUp(){
         PlateuMap.topRightX = 100;
         PlateuMap.topRightY = 100;
+        PlateuMap.rovers = new ArrayList<>();
     }
 
     @Test
@@ -67,7 +72,7 @@ public class RoverTest {
         );
     }
 
-    @Test(expected = Exception.class)
+    @Test(expected = IndexOutOfBoundsException.class)
     public void testxCoordinateValidation() throws Exception {
         // given
         PlateuMap.topRightX = 100;
@@ -76,10 +81,10 @@ public class RoverTest {
         Rover r1 = new Rover();
 
         // then
-        r1.validateAndAddxCoordinate(300);
+        ValidationService.validateAndAddxCoordinate(r1, 300);
     }
 
-    @Test(expected = Exception.class)
+    @Test(expected = IndexOutOfBoundsException.class)
     public void testxCoordinateValidation2() throws Exception {
         // given
         PlateuMap.topRightX = 10;
@@ -88,10 +93,10 @@ public class RoverTest {
         Rover r1 = new Rover();
 
         // then
-        r1.validateAndAddxCoordinate(30);
+        ValidationService.validateAndAddxCoordinate(r1, 30);
     }
 
-    @Test(expected = Exception.class)
+    @Test(expected = IndexOutOfBoundsException.class)
     public void testyCoordinateValidation2() throws Exception {
         // given
         PlateuMap.topRightY = 10;
@@ -100,7 +105,7 @@ public class RoverTest {
         Rover r1 = new Rover();
 
         // then
-        r1.validateAndAddyCoordinate(30);
+        ValidationService.validateAndAddyCoordinate(r1, 30);
 
     }
 
@@ -113,7 +118,7 @@ public class RoverTest {
         Rover r1 = new Rover(1, 1, "N");
 
         // then
-        r1.validateAndAddxCoordinate(2);
+        ValidationService.validateAndAddxCoordinate(r1, 2);
         assertTrue(r1.getxCoordinate() == 2);
     }
 
@@ -125,7 +130,7 @@ public class RoverTest {
         Rover r1 = new Rover();
 
         // then
-        r1.validateAndAddOrientation("P");
+        ValidationService.validateAndAddOrientation(r1, "P");
     }
 
     @Test
@@ -136,7 +141,7 @@ public class RoverTest {
         Rover r1 = new Rover();
 
         // then
-        r1.validateAndAddOrientation("S");
+        ValidationService.validateAndAddOrientation(r1, "S");
 
 
         assertTrue("The final orientation should have been S",
@@ -165,7 +170,7 @@ public class RoverTest {
     }
 
     // technically integration test
-    @Test (expected = Exception.class)
+    @Test (expected = IndexOutOfBoundsException.class)
     public void testMoveNorthFail() throws Exception {
         // given
         Rover r1 = new Rover(99, 99, "N");
@@ -311,6 +316,45 @@ public class RoverTest {
         assertEquals(2, r1.getyCoordinate());
     }
 
+    @Test(expected = CollisionException.class)
+    public void testCollisionNorth() throws CollisionException {
+        // given
+        Rover r1 = new Rover(1, 1, "N");
+        Rover r2 = new Rover(1, 0, "N");
+
+        // when
+        r2.move();
+    }
+
+    @Test(expected = CollisionException.class)
+    public void testCollisionWest() throws CollisionException {
+        // given
+        Rover r1 = new Rover(1, 1, "N");
+        Rover r2 = new Rover(2, 1, "W");
+
+        // when
+        r2.move();
+    }
+
+    @Test(expected = CollisionException.class)
+    public void testCollisionSouth() throws CollisionException {
+        // given
+        Rover r1 = new Rover(1, 1, "N");
+        Rover r2 = new Rover(1, 2, "S");
+
+        // when
+        r2.move();
+    }
+
+    @Test(expected = CollisionException.class)
+    public void testCollisionEast() throws CollisionException {
+        // given
+        Rover r1 = new Rover(1, 1, "N");
+        Rover r2 = new Rover(0, 1, "E");
+
+        // when
+        r2.move();
+    }
 
 
 }
