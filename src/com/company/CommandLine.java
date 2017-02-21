@@ -115,6 +115,7 @@ public class CommandLine {
         if(PlateuMap.rovers.isEmpty()){
             System.out.println("Sorry, there aren't any rovers yet ");
             mainMenu();
+            return;
         }
         System.out.println("which rover would you like to move? ");
         int roverNumber = 0;
@@ -148,11 +149,11 @@ public class CommandLine {
                 "L to rotate left and\n" +
                 "M to move forward");
 
-        String userInput = sc.nextLine();
+        String userInput = provider.getScanner().nextLine();
 
         if(userInput.isEmpty()){
             System.out.println("please enter in a command ");
-            moveExistingRover();
+            moveExistingRover(rover);
         }
 
         String[] commands = getCommaSeperatedValues(userInput);
@@ -160,6 +161,7 @@ public class CommandLine {
         rover.takeCommand(commands);
 
         System.out.println("Moving rover " + rover.id);
+        mainMenu();
     }
 
 
