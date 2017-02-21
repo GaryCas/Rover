@@ -11,6 +11,7 @@ public class CommandLine {
     static Provider provider = new Provider();
     static Scanner sc = null;
 
+    // move getcommaseperatedValues to another class and mock that class.
     public static void initialisePlateu(){
         sc = provider.getScanner();
         String userInput = "";
@@ -68,11 +69,10 @@ public class CommandLine {
         }
     }
 
-
     private static void createNewRover() {
         int roverX = 0;
         int roverY = 0;
-        Rover rover = null;
+        Rover rover;
         sc = provider.getScanner();
 
         System.out.println("enter the new rovers position divided by a comma, followed by the rovers orientation\n" +
@@ -142,8 +142,6 @@ public class CommandLine {
      * @param rover selected or newly created rover
      */
     private static void moveExistingRover(Rover rover) {
-        boolean finished = false;
-
         System.out.println("enter in a series of commands to move the rover seperated by a comma. \n" +
                 "R, to roatate right\n" +
                 "L to rotate left and\n" +
