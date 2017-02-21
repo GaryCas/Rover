@@ -8,25 +8,25 @@ import java.util.ArrayList;
 public class PlateuMap {
 
     // default values form the plateu
-    public static int topRightX;
-    public static int topRightY ;
+    public static int topRightX = 100;
+    public static int topRightY = 100;
     public static ArrayList<Rover> rovers = new ArrayList<>();
 
-    public static int validateAndModifyTopRightX(int newTopRightX){
+    public static void validateAndModifyTopRightX(int newTopRightX){
         if(newTopRightX > 0){
             topRightX = newTopRightX;
-            return 0;
+            System.out.println("valid input, initialising Plateus top right x coordinate to " + topRightX);
         } else {
-            return -1;
+            System.out.println("Invalid input, initialising Plateus top right x coordinate to 100 ");
         }
     }
 
-    public static int validateAndModifyTopRightY(int newTopRightY){
+    public static void validateAndModifyTopRightY(int newTopRightY){
         if(newTopRightY > 0){
             topRightY = newTopRightY;
-            return 0;
+            System.out.println("valid input, initialising Plateus top right x coordinate to " + topRightY);
         } else {
-            return -1;
+            System.out.println("Invalid input, initialising Plateus top right y coordinate to 100 ");
         }
     }
 }

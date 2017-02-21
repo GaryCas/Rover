@@ -1,10 +1,9 @@
 package com.company;
 
 import com.company.exceptions.CollisionException;
+import com.company.exceptions.ExceptionHandler;
 import services.ValidationService;
 
-import javax.sound.midi.SysexMessage;
-import java.util.ArrayList;
 import java.util.Random;
 
 /**
@@ -15,6 +14,7 @@ public class Rover {
     private int yCoordinate;
     String orientation;
     Long id;
+    Rover collidedWithRover;
 
     /**
      * Default constructor
@@ -60,37 +60,32 @@ public class Rover {
         return orientation;
     }
 
-    public void takeCommand(String s) {
-        switch (s.toLowerCase()){
-            case "l":
-                rotateLeft();
-                break;
-            case "r":
-                rotateRight();
-                break;
-            case "m":
-                try {
-                    move();
-                } catch (IndexOutOfBoundsException e) {
-                    handleOutOfBoundsException(e);
-                } catch (CollisionException e){
-                    handleCollisionException(e);
-                }
-                break;
-            default:
-                System.out.println(s + " is not a valid command");
-                break;
+    public void takeCommand(String[] commands) {
+
+        for (int i = 0; i < commands.length; i++) {
+            switch (commands[i].toLowerCase()){
+                case "l":
+                    rotateLeft();
+                    break;
+                case "r":
+                    rotateRight();
+                    break;
+                case "m":
+                    try {
+                        move();
+                    } catch (IndexOutOfBoundsException e) {
+                        ExceptionHandler.handleOutOfBoundsException(e);
+                    } catch (CollisionException e){
+                        ExceptionHandler.handleCollisionException(e, commands, i, this);
+                    }
+                    break;
+                default:
+                    System.out.println(commands[i] + " is not a valid command");
+                    break;
+            }
         }
 
-    }
 
-    // move to exception handler
-    private void handleCollisionException(CollisionException e) {
-        System.out.println(e.getMessage());
-    }
-
-    private void handleOutOfBoundsException(IndexOutOfBoundsException e) {
-        System.out.println(e.getMessage());
     }
 
     // these methods have been made protected so they can be reached by the the unit tests
@@ -131,7 +126,6 @@ public class Rover {
 
     protected void move() throws IndexOutOfBoundsException, CollisionException {
         switch (this.orientation.toLowerCase()){
-
             case "n":
                 ValidationService.validateNewCoordinates(this, this.getxCoordinate(), this.getyCoordinate() + 1);
                 break;
@@ -180,5 +174,13 @@ public class Rover {
 
     public Long getId() {
         return id;
+    }
+
+    public Rover getCollidedWithRover() {
+        return collidedWithRover;
+    }
+
+    public void setCollidedWithRover(Rover collidedWithRover) {
+        this.collidedWithRover = collidedWithRover;
     }
 }

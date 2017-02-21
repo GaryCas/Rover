@@ -1,46 +1,40 @@
 package com.company;
 
+import services.Provider;
+
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-/**
- * Created by rd019985 on 21/02/2017.
- */
+
 public class CommandLine {
 
-    static Scanner sc;
+    static Provider provider = new Provider();
+    static Scanner sc = null;
 
     public static void initialisePlateu(){
-        int validationStatusX = -1;
-        int validationStatusY = -1;
-        sc = getScanner();
+        sc = provider.getScanner();
         String userInput = "";
 
         // implementing validation with a while loop
-        while(validationStatusX == -1 || validationStatusY == -1) {
-            System.out.println("Please enter the x co-ordinates for the top right corner of the Plateu, seperated by commas. example 100, 100 " +
-                    "\nleave blank to initialise a plateu of 100, 100 ");
-            userInput = sc.nextLine();
+        System.out.println("Please enter the x co-ordinates for the top right corner of the Plateu, seperated by commas. example 100, 100 " +
+                "\nleave blank to initialise a plateu of 100, 100 ");
+        userInput = sc.nextLine();
 
-            // here replace all will ignore all intermitment whitespace to create a more user friendly command line.
-            String[] strings = getCommaSeperatedValues(userInput);
+        // here replace all will ignore all intermitment whitespace to create a more user friendly command line.
+        String[] strings = getCommaSeperatedValues(userInput);
 
-            if(!userInput.isEmpty()) {
-                if (strings.length < 2) {
-                    System.out.println("Be sure to enter two co-ordinates and follow the specified format ");
-                    continue;
-                }
-
-                int topRightxInt = Integer.parseInt(strings[0]);
-                int topRightyInt = Integer.parseInt(strings[1]);
-
-                validationStatusX = PlateuMap.validateAndModifyTopRightX(topRightxInt);
-                validationStatusY = PlateuMap.validateAndModifyTopRightY(topRightyInt);
-            } else {
-                validationStatusX = PlateuMap.validateAndModifyTopRightX(100);
-                validationStatusY = PlateuMap.validateAndModifyTopRightY(100);
+        // if the validation fails, call the method again.
+        if(!userInput.isEmpty()) {
+            if (strings.length < 2) {
+                System.out.println("Be sure to enter two co-ordinates and follow the specified format ");
+                initialisePlateu();
             }
 
+            int topRightxInt = Integer.parseInt(strings[0]);
+            int topRightyInt = Integer.parseInt(strings[1]);
+
+            PlateuMap.validateAndModifyTopRightX(topRightxInt);
+            PlateuMap.validateAndModifyTopRightY(topRightyInt);
         }
     }
 
@@ -49,7 +43,7 @@ public class CommandLine {
     }
 
     public static void mainMenu(){
-        sc = getScanner();
+        sc = provider.getScanner();
         System.out.println("enter in the next command\n " +
                 "R, to create a new rover\n" +
                 "M to move and existing rover\n" +
@@ -79,7 +73,7 @@ public class CommandLine {
         int roverX = 0;
         int roverY = 0;
         Rover rover = null;
-        sc = getScanner();
+        sc = provider.getScanner();
 
         System.out.println("enter the new rovers position divided by a comma, followed by the rovers orientation\n" +
                 "example: 1, 1, N\n" +
@@ -111,7 +105,6 @@ public class CommandLine {
         }
 
         moveExistingRover(rover);
-
     }
 
     /**
@@ -130,7 +123,7 @@ public class CommandLine {
             System.out.println("rover " + i + " id: " + PlateuMap.rovers.get(i).id);
         }
 
-        sc = getScanner();
+        sc = provider.getScanner();
         try {
             roverNumber = sc.nextInt();
         } catch (InputMismatchException e){
@@ -164,18 +157,11 @@ public class CommandLine {
 
         String[] commands = getCommaSeperatedValues(userInput);
 
-        for (String command : commands) {
-                rover.takeCommand(command);
-        }
+        rover.takeCommand(commands);
 
         System.out.println("Moving rover " + rover.id);
     }
 
 
-    private static Scanner getScanner() {
-        if(sc == null) {
-            sc = new Scanner(System.in);
-        }
-        return sc;
-    }
+
 }

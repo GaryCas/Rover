@@ -1,40 +1,42 @@
-<project>
-    <?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>ThoughtWorks</groupId>
-    <artifactId>RoverApp</artifactId>
+
+    <groupId>com.mycompany.app</groupId>
+    <artifactId>my-app</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.7</source>
+                    <target>1.7</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
     <packaging>jar</packaging>
-    <version>1.0.0.0-SNAPSHOT</version>
-    <name>RoverApp</name>
 
-
-    <developers>
-    <developer>
-        <id>1</id>
-        <name>Gary Cassar</name>
-        <email>garreth.cassar@gmail.com</email>
-        <organization>Thoughtworks</organization>
-        <organizationUrl>http://www.Thoughtworks.com</organizationUrl>
-    </developer>
-    </developers>
+    <name>Maven Quick Start Archetype</name>
+    <url>http://maven.apache.org</url>
 
     <dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.8.2</version>
+            <scope>test</scope>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.mockito/mockito-all -->
+        <dependency>
+            <groupId>org.mockito</groupId>
+            <artifactId>mockito-all</artifactId>
+            <version>2.0.2-beta</version>
+        </dependency>
+
 
     </dependencies>
-
-    <build>
-    <plugins>
-
-
-        <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-ejb-plugin</artifactId>
-            <version>2.1</version>
-            <configuration>
-                <ejbVersion>3.0</ejbVersion>
-            </configuration>
-        </plugin>
-    </plugins>
-    </build>
-
 </project>

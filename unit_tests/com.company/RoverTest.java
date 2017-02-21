@@ -72,84 +72,6 @@ public class RoverTest {
         );
     }
 
-    @Test(expected = IndexOutOfBoundsException.class)
-    public void testxCoordinateValidation() throws Exception {
-        // given
-        PlateuMap.topRightX = 100;
-
-        // when
-        Rover r1 = new Rover();
-
-        // then
-        ValidationService.validateAndAddxCoordinate(r1, 300);
-    }
-
-    @Test(expected = IndexOutOfBoundsException.class)
-    public void testxCoordinateValidation2() throws Exception {
-        // given
-        PlateuMap.topRightX = 10;
-
-        // when
-        Rover r1 = new Rover();
-
-        // then
-        ValidationService.validateAndAddxCoordinate(r1, 30);
-    }
-
-    @Test(expected = IndexOutOfBoundsException.class)
-    public void testyCoordinateValidation2() throws Exception {
-        // given
-        PlateuMap.topRightY = 10;
-
-        // when
-        Rover r1 = new Rover();
-
-        // then
-        ValidationService.validateAndAddyCoordinate(r1, 30);
-
-    }
-
-    @Test
-    public void testxCoordinateValidationSuccessful() throws Exception {
-        // given
-        PlateuMap.topRightX = 10;
-
-        // when
-        Rover r1 = new Rover(1, 1, "N");
-
-        // then
-        ValidationService.validateAndAddxCoordinate(r1, 2);
-        assertTrue(r1.getxCoordinate() == 2);
-    }
-
-    @Test(expected = Exception.class)
-    public void testOrientationValidation() throws Exception {
-        // given
-
-        // when
-        Rover r1 = new Rover();
-
-        // then
-        ValidationService.validateAndAddOrientation(r1, "P");
-    }
-
-    @Test
-    public void testOrientationValidationSuccessful() throws Exception {
-        // given
-
-        // when
-        Rover r1 = new Rover();
-
-        // then
-        ValidationService.validateAndAddOrientation(r1, "S");
-
-
-        assertTrue("The final orientation should have been S",
-                r1.getOrientation()
-                .equalsIgnoreCase("S"));
-    }
-
-
     @Test
     public void testMoveNorth() throws Exception {
         // given
@@ -286,33 +208,40 @@ public class RoverTest {
     @Test
     public void testTakeCommand() throws Exception {
         Rover r1 = new Rover();
+        String[] strings = {"l"};
 
-        r1.takeCommand("l");
+        r1.takeCommand(strings);
         assertEquals("W", r1.getOrientation());
+        strings[0] = "r";
 
-        r1.takeCommand("r");
+        r1.takeCommand(strings);
         assertEquals("N", r1.getOrientation());
     }
 
     @Test
     public void testTakeCommandCasing() throws Exception {
         Rover r1 = new Rover();
+        String[] strings = {"L"};
 
-        r1.takeCommand("L");
+        r1.takeCommand(strings);
         assertEquals("W", r1.getOrientation());
+        strings[0] = "R";
 
-        r1.takeCommand("R");
+
+        r1.takeCommand(strings);
         assertEquals("N", r1.getOrientation());
     }
 
     @Test
     public void testTakeCommandMove() throws Exception {
         Rover r1 = new Rover();
+        String[] strings = {"m"};
 
-        r1.takeCommand("m");
+        r1.takeCommand(strings);
         assertEquals(1, r1.getyCoordinate());
 
-        r1.takeCommand("M");
+        strings[0] = "M";
+        r1.takeCommand(strings);
         assertEquals(2, r1.getyCoordinate());
     }
 

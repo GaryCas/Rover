@@ -40,7 +40,10 @@ public class ValidationService {
 
     public static void validateNewCoordinates(Rover thisRover, int xCoordinate, int yCoordinate) throws IndexOutOfBoundsException, CollisionException {
         for (Rover rover : PlateuMap.rovers) {
-            if(rover.getxCoordinate() == xCoordinate && rover.getyCoordinate() == yCoordinate){
+            if(rover.getxCoordinate() == xCoordinate
+                    && rover.getyCoordinate() == yCoordinate){
+
+                thisRover.setCollidedWithRover(rover);
                 throw new CollisionException("Collision detected with rover " + rover.getId());
             }
         }
