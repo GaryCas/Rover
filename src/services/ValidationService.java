@@ -54,7 +54,7 @@ public class ValidationService {
                 orientation.equalsIgnoreCase("E")){
             rover.setOrientation(orientation);
         } else {
-            throw new OrientationException("there is no such orientation as " + orientation);
+            throw new OrientationException("there is no such orientation as " + orientation + " initialising to 'N'");
         }
     }
 

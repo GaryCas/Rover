@@ -55,4 +55,8 @@ public class ExceptionHandler {
         System.out.println(e.getMessage());
         MainMenuUI.initialisePlateu();
     }
+
+    public static void handleOrientationException(String message) {
+        System.out.println(message);
+    }
 }

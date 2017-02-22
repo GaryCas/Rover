@@ -25,10 +25,10 @@ public class Rover {
         System.out.println("Creating robot with id " + this.id);
         System.out.println("No coordinates provided, defaulting to 0, 0, N");
         try {
-            ValidationService.validateNewCoordinates(this, 1, 1);
+            ValidationService.validateNewCoordinates(this, 0, 0);
             ValidationService.validateAndAddOrientation(this, "N");
         } catch (OrientationException e) {
-            e.printStackTrace();
+            ExceptionHandler.handleOrientationException(e.getLocalizedMessage());
             this.orientation = "N";
         } catch (CollisionException e) {
             e.printStackTrace();
