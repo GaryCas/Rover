@@ -52,7 +52,7 @@ public class RoverUI {
         String userInput = dataParseAndInputService.getUserInput(message);
 
         switch (userInput.toLowerCase()){
-            case "M":
+            case "m":
                 MainMenuUI.mainMenu();
                 break;
             default:
