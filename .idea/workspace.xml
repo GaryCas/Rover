@@ -2,8 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7629f6bb-b669-4e75-b548-5d8d5284ba96" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/company/exceptions/OrientationException.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/company/Rover.class" afterPath="$PROJECT_DIR$/target/classes/com/company/Rover.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/company/commandline/RoverUI.class" afterPath="$PROJECT_DIR$/target/classes/com/company/commandline/RoverUI.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/services/ValidationService.class" afterPath="$PROJECT_DIR$/target/classes/services/ValidationService.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/Rover.java" afterPath="$PROJECT_DIR$/src/com/company/Rover.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/commandline/RoverUI.java" afterPath="$PROJECT_DIR$/src/com/company/commandline/RoverUI.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/services/ValidationService.java" afterPath="$PROJECT_DIR$/src/services/ValidationService.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -148,17 +154,15 @@
       <file leaf-file-name="Rover.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/company/Rover.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="54" column="74" lean-forward="false" selection-start-line="54" selection-start-column="74" selection-end-line="54" selection-end-column="74" />
+            <state relative-caret-position="340">
+              <caret line="36" column="35" lean-forward="true" selection-start-line="36" selection-start-column="35" selection-end-line="36" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="docComment;method#Rover#1;class#Rover#0" expanded="false" />
-                <element signature="method#takeCommand#0;class#Rover#0" expanded="false" />
                 <element signature="method#rotateRight#0;class#Rover#0" expanded="false" />
                 <element signature="method#rotateLeft#0;class#Rover#0" expanded="false" />
-                <element signature="method#move#0;class#Rover#0" expanded="false" />
-                <element signature="e#5713#5714#0" expanded="true" />
-                <element signature="e#5753#5754#0" expanded="true" />
+                <element signature="e#5705#5706#0" expanded="true" />
+                <element signature="e#5745#5746#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -167,10 +171,22 @@
       <file leaf-file-name="ValidationService.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/services/ValidationService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="78" column="0" lean-forward="false" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
+            <state relative-caret-position="170">
+              <caret line="49" column="23" lean-forward="false" selection-start-line="49" selection-start-column="23" selection-end-line="49" selection-end-column="23" />
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="OrientationException.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/company/exceptions/OrientationException.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" column="49" lean-forward="false" selection-start-line="6" selection-start-column="49" selection-end-line="6" selection-end-column="49" />
+              <folding>
+                <element signature="e#211#212#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -192,8 +208,8 @@
       <file leaf-file-name="ExceptionHandler.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/exceptions/ExceptionHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+            <state relative-caret-position="306">
+              <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -204,14 +220,13 @@
       <file leaf-file-name="RoverUI.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/commandline/RoverUI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="24" column="25" lean-forward="true" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="25" />
+            <state relative-caret-position="428">
+              <caret line="87" column="0" lean-forward="true" selection-start-line="87" selection-start-column="0" selection-end-line="87" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="docComment;method#moveExistingRover#0;class#RoverUI#0" expanded="false" />
                 <element signature="method#moveExistingRover#0;class#RoverUI#0" expanded="false" />
                 <element signature="docComment;method#moveExistingRover#1;class#RoverUI#0" expanded="false" />
-                <element signature="method#moveExistingRover#1;class#RoverUI#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -266,11 +281,12 @@
         <option value="$PROJECT_DIR$/unit_tests/com.company/commandline/CommandLineTest.java" />
         <option value="$PROJECT_DIR$/unit_tests/com.company/services/DataParseAndInputServiceTest.java" />
         <option value="$PROJECT_DIR$/src/com/company/commandline/MainMenuUI.java" />
-        <option value="$PROJECT_DIR$/src/com/company/commandline/RoverUI.java" />
-        <option value="$PROJECT_DIR$/src/services/ValidationService.java" />
         <option value="$PROJECT_DIR$/src/com/company/PlateuMap.java" />
         <option value="$PROJECT_DIR$/src/com/company/exceptions/ExceptionHandler.java" />
         <option value="$PROJECT_DIR$/src/services/DataParseAndInputService.java" />
+        <option value="$PROJECT_DIR$/src/com/company/exceptions/OrientationException.java" />
+        <option value="$PROJECT_DIR$/src/services/ValidationService.java" />
+        <option value="$PROJECT_DIR$/src/com/company/commandline/RoverUI.java" />
         <option value="$PROJECT_DIR$/src/com/company/Rover.java" />
       </list>
     </option>
@@ -1042,7 +1058,7 @@
       <updated>1487601861630</updated>
       <workItem from="1487601864526" duration="12761000" />
       <workItem from="1487676035114" duration="20655000" />
-      <workItem from="1487761796640" duration="6679000" />
+      <workItem from="1487761796640" duration="7298000" />
     </task>
     <servers />
   </component>
@@ -1079,11 +1095,11 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40095000" />
+    <option name="totallyTimeSpent" value="40714000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1296" height="1000" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1159,22 +1175,22 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/company/exceptions/ExceptionHandler.java</url>
-          <line>31</line>
+          <url>file://$PROJECT_DIR$/src/com/company/Rover.java</url>
+          <line>69</line>
           <properties />
-          <option name="timeStamp" value="60" />
+          <option name="timeStamp" value="64" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/services/ValidationService.java</url>
-          <line>77</line>
+          <url>file://$PROJECT_DIR$/src/com/company/Rover.java</url>
+          <line>60</line>
           <properties />
-          <option name="timeStamp" value="61" />
+          <option name="timeStamp" value="65" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="62" />
+      <option name="time" value="66" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="JUnit">
@@ -1237,9 +1253,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="748">
           <caret line="46" column="93" lean-forward="false" selection-start-line="46" selection-start-column="80" selection-end-line="46" selection-end-column="93" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1501,16 +1515,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/unit_tests/com.company/exceptions/ExceptionHandlerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="18" column="35" lean-forward="false" selection-start-line="18" selection-start-column="35" selection-end-line="18" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/commandline/MainMenuUI.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -1532,14 +1536,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/PlateuMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" column="7" lean-forward="false" selection-start-line="29" selection-start-column="7" selection-end-line="29" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/services/DataParseAndInputService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="527">
@@ -1548,20 +1544,6 @@
             <element signature="imports" expanded="true" />
             <element signature="e#1123#1124#0" expanded="true" />
             <element signature="e#1168#1169#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/commandline/RoverUI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="24" column="25" lean-forward="true" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="docComment;method#moveExistingRover#0;class#RoverUI#0" expanded="false" />
-            <element signature="method#moveExistingRover#0;class#RoverUI#0" expanded="false" />
-            <element signature="docComment;method#moveExistingRover#1;class#RoverUI#0" expanded="false" />
-            <element signature="method#moveExistingRover#1;class#RoverUI#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1601,39 +1583,78 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/services/ValidationService.java">
+    <entry file="file://$PROJECT_DIR$/src/com/company/exceptions/ExceptionHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="78" column="0" lean-forward="false" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
+        <state relative-caret-position="306">
+          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/exceptions/ExceptionHandler.java">
+    <entry file="file://$PROJECT_DIR$/src/com/company/exceptions/OrientationException.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+        <state relative-caret-position="102">
+          <caret line="6" column="49" lean-forward="false" selection-start-line="6" selection-start-column="49" selection-end-line="6" selection-end-column="49" />
+          <folding>
+            <element signature="e#211#212#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/unit_tests/com.company/exceptions/ExceptionHandlerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="18" column="35" lean-forward="false" selection-start-line="18" selection-start-column="35" selection-end-line="18" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/PlateuMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="29" column="7" lean-forward="false" selection-start-line="29" selection-start-column="7" selection-end-line="29" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/services/ValidationService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="49" column="23" lean-forward="false" selection-start-line="49" selection-start-column="23" selection-end-line="49" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/commandline/RoverUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="428">
+          <caret line="87" column="0" lean-forward="true" selection-start-line="87" selection-start-column="0" selection-end-line="87" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="docComment;method#moveExistingRover#0;class#RoverUI#0" expanded="false" />
+            <element signature="method#moveExistingRover#0;class#RoverUI#0" expanded="false" />
+            <element signature="docComment;method#moveExistingRover#1;class#RoverUI#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/Rover.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="54" column="74" lean-forward="false" selection-start-line="54" selection-start-column="74" selection-end-line="54" selection-end-column="74" />
+        <state relative-caret-position="340">
+          <caret line="36" column="35" lean-forward="true" selection-start-line="36" selection-start-column="35" selection-end-line="36" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="docComment;method#Rover#1;class#Rover#0" expanded="false" />
-            <element signature="method#takeCommand#0;class#Rover#0" expanded="false" />
             <element signature="method#rotateRight#0;class#Rover#0" expanded="false" />
             <element signature="method#rotateLeft#0;class#Rover#0" expanded="false" />
-            <element signature="method#move#0;class#Rover#0" expanded="false" />
-            <element signature="e#5713#5714#0" expanded="true" />
-            <element signature="e#5753#5754#0" expanded="true" />
+            <element signature="e#5705#5706#0" expanded="true" />
+            <element signature="e#5745#5746#0" expanded="true" />
           </folding>
         </state>
       </provider>

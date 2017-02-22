@@ -86,7 +86,6 @@ public class RoverUI {
 
         rover.takeCommand(commands);
 
-        System.out.println("Moving rover " + rover.getId());
         MainMenuUI.mainMenu();
     }
 }

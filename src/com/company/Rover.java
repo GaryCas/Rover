@@ -2,6 +2,7 @@ package com.company;
 
 import com.company.exceptions.CollisionException;
 import com.company.exceptions.ExceptionHandler;
+import com.company.exceptions.OrientationException;
 import services.ValidationService;
 
 import java.util.Random;
@@ -26,7 +27,10 @@ public class Rover {
         try {
             ValidationService.validateNewCoordinates(this, 1, 1);
             ValidationService.validateAndAddOrientation(this, "N");
-        } catch (Exception e) {
+        } catch (OrientationException e) {
+            e.printStackTrace();
+            this.orientation = "N";
+        } catch (CollisionException e) {
             e.printStackTrace();
         }
 
@@ -47,7 +51,10 @@ public class Rover {
         try {
             ValidationService.validateNewCoordinates(this, xCoordinate, yCoordinate);
             ValidationService.validateAndAddOrientation(this, orientation);
-        } catch (Exception e) {
+        } catch (OrientationException e) {
+            e.printStackTrace();
+            this.orientation = "N";
+        } catch (CollisionException e) {
             e.printStackTrace();
         }
 

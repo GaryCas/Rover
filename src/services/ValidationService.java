@@ -3,6 +3,7 @@ package services;
 import com.company.PlateuMap;
 import com.company.Rover;
 import com.company.exceptions.CollisionException;
+import com.company.exceptions.OrientationException;
 
 /**
  * Created by rd019985 on 21/02/2017.
@@ -44,17 +45,16 @@ public class ValidationService {
      *
      * @param rover rover whose value is to be set
      * @param orientation String orientation
-     * @throws Exception thrown when the user inputs an incorrect value. The value of a custom exception here is
-     *  debateable
+     * @throws Exception
      */
-    public static void validateAndAddOrientation(Rover rover, String orientation) throws Exception {
+    public static void validateAndAddOrientation(Rover rover, String orientation) throws OrientationException {
         if( orientation.equalsIgnoreCase("N") ||
                 orientation.equalsIgnoreCase("S") ||
                 orientation.equalsIgnoreCase("W") ||
                 orientation.equalsIgnoreCase("E")){
             rover.setOrientation(orientation);
         } else {
-            throw new Exception("there is no such orientation as " + orientation);
+            throw new OrientationException("there is no such orientation as " + orientation);
         }
     }
 
