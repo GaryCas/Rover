@@ -11,10 +11,10 @@ public class RoverUI {
 
     static DataParseAndInputService dataParseAndInputService = new DataParseAndInputService();
 
-    void createNewRover() {
+    // made public for thoughtworks test
+    public void createNewRover() {
         int roverX = 0;
         int roverY = 0;
-        Rover rover;
         String message = "enter the new rovers position divided by a comma, followed by the rovers orientation\n" +
                 "example: 1, 1, N\n" +
                 "Alternatively, leave blank to intialise a rove on 0, 0, N";
@@ -22,7 +22,7 @@ public class RoverUI {
         String userInput = dataParseAndInputService.getUserInput(message);
 
         if(userInput.isEmpty()){
-            rover = new Rover();
+            new Rover();
         } else {
             String[] values = dataParseAndInputService.getCommaSeperatedValues(userInput);
 
@@ -41,10 +41,23 @@ public class RoverUI {
             }
             String orientation = values[2];
 
-            rover = new Rover(roverX, roverY, orientation);
+            new Rover(roverX, roverY, orientation);
         }
+       backToMainMenu();
+    }
 
-        moveExistingRover(rover);
+    private static void backToMainMenu() {
+        String message = "press M to go back to main menu";
+
+        String userInput = dataParseAndInputService.getUserInput(message);
+
+        switch (userInput.toLowerCase()){
+            case "M":
+                MainMenuUI.mainMenu();
+                break;
+            default:
+                break;
+        }
     }
 
     /**
@@ -69,7 +82,7 @@ public class RoverUI {
      *
      * @param rover selected or newly created rover
      */
-    private static void moveExistingRover(Rover rover) {
+    public static void moveExistingRover(Rover rover) {
         String message = "enter in a series of commands to move the rover seperated by a comma.\n" +
                 "R, to roatate right\n" +
                 "L to rotate left and\n" +
@@ -86,6 +99,10 @@ public class RoverUI {
 
         rover.takeCommand(commands);
 
-        MainMenuUI.mainMenu();
+        backToMainMenu();
+    }
+
+    public static void setDataParseAndInputService(DataParseAndInputService dataParseAndInputService) {
+        RoverUI.dataParseAndInputService = dataParseAndInputService;
     }
 }

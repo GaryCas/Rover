@@ -10,8 +10,6 @@ import java.util.Scanner;
  */
 public class DataParseAndInputService {
 
-    static Scanner sc = null;
-
     public String[] getCommaSeperatedValues(String userInput) {
         // here replace all will ignore all intermitment whitespace to create a more user friendly command line.
         return userInput.replaceAll("\\s+","").split(",");

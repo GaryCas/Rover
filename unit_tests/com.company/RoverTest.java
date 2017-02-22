@@ -285,5 +285,4 @@ public class RoverTest {
         r2.move();
     }
 
-
 }
