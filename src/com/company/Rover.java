@@ -26,9 +26,6 @@ public class Rover {
         try {
             ValidationService.validateNewCoordinates(this, 1, 1);
             ValidationService.validateAndAddOrientation(this, "N");
-        } catch(CollisionException e){
-            String[] strings = {};
-            ExceptionHandler.handleCollisionException(e,  strings, 0, getCollidedWithRover());
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -50,9 +47,6 @@ public class Rover {
         try {
             ValidationService.validateNewCoordinates(this, xCoordinate, yCoordinate);
             ValidationService.validateAndAddOrientation(this, orientation);
-        } catch(CollisionException e){
-            String[] strings = {};
-            ExceptionHandler.handleCollisionException(e,  strings, 0, getCollidedWithRover());
         } catch (Exception e) {
             e.printStackTrace();
         }

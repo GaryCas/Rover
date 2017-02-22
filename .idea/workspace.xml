@@ -2,23 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7629f6bb-b669-4e75-b548-5d8d5284ba96" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/company/commandline/RoverUI.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/company/exceptions/PlateuInitException.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/services/DataParseAndInputService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/unit_tests/com.company/commandline/CommandLineTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/unit_tests/com.company/services/DataParseAndInputServiceTest.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/services/Provider.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/company/CommandLine.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/services/Provider.class" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/company/CommandLine.java" afterPath="$PROJECT_DIR$/src/com/company/commandline/MainMenuUI.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/company/Main.class" afterPath="$PROJECT_DIR$/target/classes/com/company/Main.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/company/exceptions/ExceptionHandler.class" afterPath="$PROJECT_DIR$/target/classes/com/company/exceptions/ExceptionHandler.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/Main.java" afterPath="$PROJECT_DIR$/src/com/company/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/PlateuMap.java" afterPath="$PROJECT_DIR$/src/com/company/PlateuMap.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/Rover.java" afterPath="$PROJECT_DIR$/src/com/company/Rover.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/exceptions/ExceptionHandler.java" afterPath="$PROJECT_DIR$/src/com/company/exceptions/ExceptionHandler.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/services/ValidationService.java" afterPath="$PROJECT_DIR$/src/services/ValidationService.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -82,8 +67,8 @@
                         <caret line="31" column="9" lean-forward="false" selection-start-line="31" selection-start-column="9" selection-end-line="31" selection-end-column="9" />
                         <folding>
                           <element signature="imports" expanded="true" />
-                          <element signature="e#1124#1125#0" expanded="true" />
-                          <element signature="e#1169#1170#0" expanded="true" />
+                          <element signature="e#1123#1124#0" expanded="true" />
+                          <element signature="e#1168#1169#0" expanded="true" />
                         </folding>
                       </state>
                     </provider>
@@ -163,8 +148,8 @@
       <file leaf-file-name="Rover.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/company/Rover.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-158">
-              <caret line="55" column="10" lean-forward="false" selection-start-line="55" selection-start-column="10" selection-end-line="55" selection-end-column="10" />
+            <state relative-caret-position="357">
+              <caret line="54" column="74" lean-forward="false" selection-start-line="54" selection-start-column="74" selection-end-line="54" selection-end-column="74" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="docComment;method#Rover#1;class#Rover#0" expanded="false" />
@@ -172,6 +157,8 @@
                 <element signature="method#rotateRight#0;class#Rover#0" expanded="false" />
                 <element signature="method#rotateLeft#0;class#Rover#0" expanded="false" />
                 <element signature="method#move#0;class#Rover#0" expanded="false" />
+                <element signature="e#5713#5714#0" expanded="true" />
+                <element signature="e#5753#5754#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -180,11 +167,10 @@
       <file leaf-file-name="ValidationService.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/services/ValidationService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+            <state relative-caret-position="272">
+              <caret line="78" column="0" lean-forward="false" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <marker date="1487767898320" expanded="true" signature="735:861" ph="/**...*/" />
               </folding>
             </state>
           </provider>
@@ -203,17 +189,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CommandLineTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/unit_tests/com.company/commandline/CommandLineTest.java">
+      <file leaf-file-name="ExceptionHandler.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/company/exceptions/ExceptionHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="107" column="0" lean-forward="false" selection-start-line="107" selection-start-column="0" selection-end-line="107" selection-end-column="0" />
+            <state relative-caret-position="187">
+              <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#testInitialisePlateuDefault#0;class#CommandLineTest#0" expanded="false" />
-                <element signature="method#testInitialisePlateuOneParam#0;class#CommandLineTest#0" expanded="false" />
-                <element signature="method#testInitialisePlateuOverTwoParams#0;class#CommandLineTest#0" expanded="false" />
-                <element signature="method#testMainMenu#0;class#CommandLineTest#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -230,30 +212,6 @@
                 <element signature="method#moveExistingRover#0;class#RoverUI#0" expanded="false" />
                 <element signature="docComment;method#moveExistingRover#1;class#RoverUI#0" expanded="false" />
                 <element signature="method#moveExistingRover#1;class#RoverUI#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DataParseAndInputServiceTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/unit_tests/com.company/services/DataParseAndInputServiceTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ExceptionHandler.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/company/exceptions/ExceptionHandler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="49" column="7" lean-forward="false" selection-start-line="49" selection-start-column="7" selection-end-line="49" selection-end-column="7" />
-              <folding>
-                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -309,11 +267,11 @@
         <option value="$PROJECT_DIR$/unit_tests/com.company/services/DataParseAndInputServiceTest.java" />
         <option value="$PROJECT_DIR$/src/com/company/commandline/MainMenuUI.java" />
         <option value="$PROJECT_DIR$/src/com/company/commandline/RoverUI.java" />
-        <option value="$PROJECT_DIR$/src/com/company/Rover.java" />
         <option value="$PROJECT_DIR$/src/services/ValidationService.java" />
         <option value="$PROJECT_DIR$/src/com/company/PlateuMap.java" />
         <option value="$PROJECT_DIR$/src/com/company/exceptions/ExceptionHandler.java" />
         <option value="$PROJECT_DIR$/src/services/DataParseAndInputService.java" />
+        <option value="$PROJECT_DIR$/src/com/company/Rover.java" />
       </list>
     </option>
   </component>
@@ -1084,7 +1042,7 @@
       <updated>1487601861630</updated>
       <workItem from="1487601864526" duration="12761000" />
       <workItem from="1487676035114" duration="20655000" />
-      <workItem from="1487761796640" duration="6291000" />
+      <workItem from="1487761796640" duration="6679000" />
     </task>
     <servers />
   </component>
@@ -1121,11 +1079,11 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39707000" />
+    <option name="totallyTimeSpent" value="40095000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1296" height="1000" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1138,7 +1096,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36629215" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36629215" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3280899" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1148,8 +1106,8 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38876405" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.02265625" sideWeight="0.5128676" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30898875" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28046876" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3280899" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28046876" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3280899" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -1199,10 +1157,24 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/company/exceptions/ExceptionHandler.java</url>
+          <line>31</line>
+          <properties />
+          <option name="timeStamp" value="60" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/services/ValidationService.java</url>
+          <line>77</line>
+          <properties />
+          <option name="timeStamp" value="61" />
+        </line-breakpoint>
+      </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="60" />
+      <option name="time" value="62" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="JUnit">
@@ -1529,72 +1501,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/unit_tests/com.company/services/DataParseAndInputServiceTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/commandline/RoverUI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="24" column="25" lean-forward="true" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="docComment;method#moveExistingRover#0;class#RoverUI#0" expanded="false" />
-            <element signature="method#moveExistingRover#0;class#RoverUI#0" expanded="false" />
-            <element signature="docComment;method#moveExistingRover#1;class#RoverUI#0" expanded="false" />
-            <element signature="method#moveExistingRover#1;class#RoverUI#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/unit_tests/com.company/exceptions/ExceptionHandlerTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="18" column="35" lean-forward="false" selection-start-line="18" selection-start-column="35" selection-end-line="18" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/unit_tests/com.company/commandline/CommandLineTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="107" column="0" lean-forward="false" selection-start-line="107" selection-start-column="0" selection-end-line="107" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#testInitialisePlateuDefault#0;class#CommandLineTest#0" expanded="false" />
-            <element signature="method#testInitialisePlateuOneParam#0;class#CommandLineTest#0" expanded="false" />
-            <element signature="method#testInitialisePlateuOverTwoParams#0;class#CommandLineTest#0" expanded="false" />
-            <element signature="method#testMainMenu#0;class#CommandLineTest#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/services/ValidationService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1487767898320" expanded="true" signature="735:861" ph="/**...*/" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/exceptions/CollisionException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="17" lean-forward="false" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-          <folding>
-            <element signature="e#177#178#0" expanded="true" />
-            <element signature="e#207#208#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1608,16 +1520,6 @@
             <element signature="method#initialisePlateu#0;class#MainMenuUI#0" expanded="false" />
             <element signature="method#mainMenu#0;class#MainMenuUI#0" expanded="false" />
             <element signature="method#setDataParseAndInputService#0;class#MainMenuUI#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/exceptions/ExceptionHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="49" column="7" lean-forward="false" selection-start-line="49" selection-start-column="7" selection-end-line="49" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1638,10 +1540,91 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/services/DataParseAndInputService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="31" column="9" lean-forward="false" selection-start-line="31" selection-start-column="9" selection-end-line="31" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1123#1124#0" expanded="true" />
+            <element signature="e#1168#1169#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/commandline/RoverUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="24" column="25" lean-forward="true" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="docComment;method#moveExistingRover#0;class#RoverUI#0" expanded="false" />
+            <element signature="method#moveExistingRover#0;class#RoverUI#0" expanded="false" />
+            <element signature="docComment;method#moveExistingRover#1;class#RoverUI#0" expanded="false" />
+            <element signature="method#moveExistingRover#1;class#RoverUI#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/unit_tests/com.company/services/DataParseAndInputServiceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/unit_tests/com.company/commandline/CommandLineTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="107" column="0" lean-forward="false" selection-start-line="107" selection-start-column="0" selection-end-line="107" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#testInitialisePlateuDefault#0;class#CommandLineTest#0" expanded="false" />
+            <element signature="method#testInitialisePlateuOneParam#0;class#CommandLineTest#0" expanded="false" />
+            <element signature="method#testInitialisePlateuOverTwoParams#0;class#CommandLineTest#0" expanded="false" />
+            <element signature="method#testMainMenu#0;class#CommandLineTest#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/exceptions/CollisionException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="17" lean-forward="false" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+          <folding>
+            <element signature="e#177#178#0" expanded="true" />
+            <element signature="e#207#208#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/services/ValidationService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="78" column="0" lean-forward="false" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/exceptions/ExceptionHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/Rover.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-158">
-          <caret line="55" column="10" lean-forward="false" selection-start-line="55" selection-start-column="10" selection-end-line="55" selection-end-column="10" />
+        <state relative-caret-position="357">
+          <caret line="54" column="74" lean-forward="false" selection-start-line="54" selection-start-column="74" selection-end-line="54" selection-end-column="74" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="docComment;method#Rover#1;class#Rover#0" expanded="false" />
@@ -1649,18 +1632,8 @@
             <element signature="method#rotateRight#0;class#Rover#0" expanded="false" />
             <element signature="method#rotateLeft#0;class#Rover#0" expanded="false" />
             <element signature="method#move#0;class#Rover#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/services/DataParseAndInputService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="31" column="9" lean-forward="false" selection-start-line="31" selection-start-column="9" selection-end-line="31" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1124#1125#0" expanded="true" />
-            <element signature="e#1169#1170#0" expanded="true" />
+            <element signature="e#5713#5714#0" expanded="true" />
+            <element signature="e#5753#5754#0" expanded="true" />
           </folding>
         </state>
       </provider>
