@@ -1,16 +1,12 @@
 package com.company.exceptions;
 
+import com.company.commandline.MainMenuUI;
 import com.company.Rover;
 
 /**
- * Created by rd019985 on 21/02/2017.
+ * Creating custom exceptions allows us to customise the ways we handle exceptions in a modular way
  */
 public class ExceptionHandler {
-
-    // can be modified to use Dijstra's algorithm to find an alternative path for the rover.
-    // this can be done by modifying the command on which the first rover collided with the second to 'c'
-    // splitting the string between the c and the next m, finding out the rovers ultimate destination
-    // finding an alternative route and splicing and modifying the first rovers movement commands
 
     /**
      *  Handles the Collision Exception. Currently prints out information about the collision.
@@ -47,5 +43,16 @@ public class ExceptionHandler {
      */
     public static void handleOutOfBoundsException(IndexOutOfBoundsException e) {
         System.out.println(e.getMessage());
+    }
+
+    /**
+     * Print message and retry
+     *
+     * @param e
+     * @throws PlateuInitException
+     */
+    public static void handlePlateuInitException(PlateuInitException e) throws PlateuInitException {
+        System.out.println(e.getMessage());
+        MainMenuUI.initialisePlateu();
     }
 }

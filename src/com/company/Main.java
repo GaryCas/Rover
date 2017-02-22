@@ -1,15 +1,19 @@
 package com.company;
 
-import java.io.Console;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.util.Scanner;
+import com.company.commandline.MainMenuUI;
+import com.company.exceptions.ExceptionHandler;
+import com.company.exceptions.PlateuInitException;
 
 public class Main {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws PlateuInitException {
 
-        CommandLine.initialisePlateu();
-        CommandLine.mainMenu();
+        try {
+            MainMenuUI.initialisePlateu();
+            MainMenuUI.mainMenu();
+        } catch (PlateuInitException e) {
+            ExceptionHandler.handlePlateuInitException(e);
+        }
+
     }
 }

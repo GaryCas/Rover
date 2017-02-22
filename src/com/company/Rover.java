@@ -24,9 +24,11 @@ public class Rover {
         System.out.println("Creating robot with id " + this.id);
         System.out.println("No coordinates provided, defaulting to 0, 0, N");
         try {
-            ValidationService.validateAndAddxCoordinate(this, 0);
-            ValidationService.validateAndAddyCoordinate(this, 0);
+            ValidationService.validateNewCoordinates(this, 1, 1);
             ValidationService.validateAndAddOrientation(this, "N");
+        } catch(CollisionException e){
+            String[] strings = {};
+            ExceptionHandler.handleCollisionException(e,  strings, 0, getCollidedWithRover());
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -46,9 +48,11 @@ public class Rover {
         this.id = Math.abs(new Random().nextLong());
         System.out.println("Creating robot with id " + this.id);
         try {
-            ValidationService.validateAndAddxCoordinate(this, xCoordinate);
-            ValidationService.validateAndAddyCoordinate(this, yCoordinate);
+            ValidationService.validateNewCoordinates(this, xCoordinate, yCoordinate);
             ValidationService.validateAndAddOrientation(this, orientation);
+        } catch(CollisionException e){
+            String[] strings = {};
+            ExceptionHandler.handleCollisionException(e,  strings, 0, getCollidedWithRover());
         } catch (Exception e) {
             e.printStackTrace();
         }

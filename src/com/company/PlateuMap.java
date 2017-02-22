@@ -12,6 +12,11 @@ public class PlateuMap {
     public static int topRightY = 100;
     public static ArrayList<Rover> rovers = new ArrayList<>();
 
+    /**
+     * Validate value is positive
+     *
+     * @param newTopRightX
+     */
     public static void validateAndModifyTopRightX(int newTopRightX){
         if(newTopRightX > 0){
             topRightX = newTopRightX;
@@ -21,6 +26,12 @@ public class PlateuMap {
         }
     }
 
+
+    /**
+     * Validate value is positive
+     *
+     * @param newTopRightY
+     */
     public static void validateAndModifyTopRightY(int newTopRightY){
         if(newTopRightY > 0){
             topRightY = newTopRightY;
